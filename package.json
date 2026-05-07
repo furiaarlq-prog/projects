@@ -1,0 +1,21 @@
+{
+  "name": "sv",
+  "module": "index.ts",
+  "type": "module",
+  "private": true,
+  "scripts": {
+    "permission": "sudo setcap 'cap_net_bind_service=+ep' $(which bun)",
+    "start": "bun index.ts"
+  },
+  "devDependencies": {
+    "@types/bun": "latest"
+  },
+  "peerDependencies": {
+    "typescript": "^5"
+  },
+  "dependencies": {
+    "@types/express": "^5.0.6",
+    "dotenv": "^17.4.2",
+    "express": "^5.2.1"
+  }
+}
